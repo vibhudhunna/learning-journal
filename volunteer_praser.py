@@ -6,9 +6,13 @@ with open('volunteers.csv', mode='r') as file:
     next(reader)
 
     for row in reader:
+        # Check if the row has all 3 required columns
+        if len(row) < 3:
+            print(f"Skipping incomplete row: {row}")
+            continue # This instantly skips to the next row in the loop
+            
         name = row[0].title() 
         role = row[1].title()
         phone = row[2]
-
-        # The 'f' tells Python to swap the {} for the actual variables
+        
         print(f"Volunteer: {name} | Duty: {role} | Contact: {phone}")
