@@ -10,7 +10,7 @@ def generate_password(length, use_symbols):
     password = "".join(random.choices(chars, k=length))
     return password
 
-print("--- ALFA Password Generator ---")
+print("--- BETA Password Generator ---")
 
 # 1. Get and validate the length
 while True:
