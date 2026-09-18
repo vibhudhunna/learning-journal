@@ -9,5 +9,5 @@ while True:
         print("Error: That is not a valid number. Please use digits")
 
 chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*"
-password = "".join(random.sample(chars, length))
+password = "".join(random.choices(chars, k=length))
 print("Generated Password: " + password)
