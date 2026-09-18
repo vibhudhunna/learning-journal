@@ -1,4 +1,4 @@
-import random
+import random #RIGHT
 
 def generate_password(length, use_symbols):
     # Check the user's preference for symbols
